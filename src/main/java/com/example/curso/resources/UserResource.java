@@ -14,7 +14,7 @@ public class UserResource {
 	@GetMapping
 	public ResponseEntity<User> findAll(){
 		User u = new User(1L, "Diego", "diego@gmail.com", "98988888888", "1234567");
-		return ResponseEntity.ok().body(u);		// Return in response with sucess no http e o body retorna o corpo da resposta
+		return ResponseEntity.ok().body(u);		// Return a object JSON in path "/users" of browser
 	}
 	
 }
