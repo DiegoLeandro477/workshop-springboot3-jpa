@@ -15,6 +15,7 @@ import jakarta.persistence.Table;
 public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
+	// Defining the variable id, how primary key e generation auto.
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
